@@ -5,7 +5,7 @@ const { ApolloServer } = require("apollo-server-express");
 const { authMiddleware } = require("./utils/auth");
 
 // import typeDefs and resolvers
-const { typeDefs, resolvers } = require("./schemas");
+const { typeDefs, resolvers } = require("./schema");
 
 // function to run on server start
 const startServer = async () => {
@@ -29,7 +29,7 @@ const startServer = async () => {
 };
 
 // Initialize Apollo server
-startServer();
+startServer;
 
 const app = express();
 const PORT = process.env.PORT || 3001;
